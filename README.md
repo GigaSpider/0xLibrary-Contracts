@@ -3,6 +3,6 @@ If you would like to have your work featured on 0xLibrary, then make a pull requ
 
 If your idea is good, I will make accomodations to make your contract work and integrate well with the site. 
 
-95% of contract proceeds will go to the developer; include your ethereum wallet address in your pull request and specify which network (mainnet, optimism, or arbitrum) that you would like to have the contract deployed on.
+<h1>95% of contract proceeds will go to the developer</h1>; include your ethereum wallet address in your pull request and specify which network (mainnet, optimism, or arbitrum) that you would like to have the contract deployed on.
 
 -Gran Araña
