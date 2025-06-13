@@ -13,16 +13,9 @@ contract MerkleTreeWithHistory {
     uint256 public constant FIELD_SIZE =
         21888242871839275222246405745257275088548364400416034343698204186575808495617;
     uint256 public constant ZERO_VALUE =
-        21663839004416932945382355908790599225266501822907911457504978515578255421292; // = keccak256("tornado") % FIELD_SIZE
-    IHasher public immutable hasher;
-
+        21663839004416932945382355908790599225266501822907911457504978515578255421292;
     uint32 public levels;
 
-    // the following variables are made public for easier testing and debugging and
-    // are not supposed to be accessed in regular code
-
-    // filledSubtrees and roots could be bytes32[size], but using mappings makes it cheaper because
-    // it removes index range check on every interaction
     mapping(uint256 => bytes32) public filledSubtrees;
     mapping(uint256 => bytes32) public roots;
     uint32 public constant ROOT_HISTORY_SIZE = 30;
@@ -42,9 +35,6 @@ contract MerkleTreeWithHistory {
         roots[0] = zeros(_levels - 1);
     }
 
-    /**
-    @dev Hash 2 tree leaves, returns MiMC(_left, _right)
-  */
     function hashLeftRight(
         IHasher _hasher,
         bytes32 _left,
@@ -98,9 +88,6 @@ contract MerkleTreeWithHistory {
         return _nextIndex;
     }
 
-    /**
-    @dev Whether the root is present in the root history
-  */
     function isKnownRoot(bytes32 _root) public view returns (bool) {
         if (_root == 0) {
             return false;
@@ -119,14 +106,10 @@ contract MerkleTreeWithHistory {
         return false;
     }
 
-    /**
-    @dev Returns the last root
-  */
     function getLastRoot() public view returns (bytes32) {
         return roots[currentRootIndex];
     }
 
-    /// @dev provides Zero (Empty) elements for a MiMC MerkleTree. Up to 32 levels
     function zeros(uint256 i) public pure returns (bytes32) {
         if (i == 0)
             return
