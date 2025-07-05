@@ -1,0 +1,16 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "GOLD",
+  "sourceName": "contracts/Gold.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ReentrancyGuardReentrantCall",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b506001600081905550603f8060256000396000f3fe6080604052600080fdfea2646970667358221220aa4ab3ff69b1787f91874a06ede0d3c0f9fe307cb9581d20dd415ecb7225ccad64736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220aa4ab3ff69b1787f91874a06ede0d3c0f9fe307cb9581d20dd415ecb7225ccad64736f6c634300081b0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
