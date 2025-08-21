@@ -1,6 +1,5 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "WAGER",
   "sourceName": "contracts/Donation.sol",
   "abi": [
     {
