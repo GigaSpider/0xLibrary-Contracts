@@ -2,7 +2,7 @@
   "contracts": [
     {
       "name": "zero-knowledge proof obfuscator 0.01",
-      "network": 1,
+      "chain_id": 1,
       "address": "0xDE03E825d944e2Fce71761faE63e1F7719f1F632",
       "abi": [
         {
@@ -403,7 +403,7 @@
     },
     {
       "name": "zero-knowledge proof obfuscator 0.05",
-      "network": 1115111,
+      "chain_id": 1115111,
       "address": "0xB7990562f05c9a5D6ee0D5F7c2ff90d20644cf4c",
       "abi": [
         {
@@ -804,7 +804,7 @@
     },
     {
       "name": "zero-knowledge proof obfuscator 0.1",
-      "network": 1115111,
+      "chain_id": 1115111,
       "address": "0x52346736Ae0279f4219313AAE626F12bCc7DAFA3",
       "abi": [
         {
@@ -1205,7 +1205,7 @@
     },
     {
       "name": "zero-knowledge proof obfuscator 1.0",
-      "network": 1115111,
+      "chain_id": 1115111,
       "address": "0xFA8B3633C15b8a046E6060402a1A147da91fa92c",
       "abi": [
         {
