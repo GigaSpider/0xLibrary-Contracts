@@ -2,7 +2,7 @@
   "contracts": [
     {
       "name": "zk mixer 0.01",
-      "chain_id": 1,
+      "chain_id": 1115111,
       "address": "0xDE03E825d944e2Fce71761faE63e1F7719f1F632",
       "abi": [
         {
